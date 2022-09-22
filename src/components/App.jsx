@@ -1,9 +1,12 @@
-import { Feedback } from './Feedback/Feedback';
+import { Component } from 'react';
+import { FeedbackOptions } from './FeedbackOptions/FeedbackOptions';
 
-export const App = () => {
-  return (
+export class App extends Component {
+  render() {
+    return(
     <div>
-    <Feedback/>
-    </div>
-  );
+      <FeedbackOptions />
+      </div>
+    )
+  }
 };
