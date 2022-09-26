@@ -45,7 +45,7 @@ export class App extends Component {
         <FeedbackCard>
           <Section title={"Please leave feedback"}>
             <FeedbackOptions
-              options={this.state}
+              options={Object.keys(this.state)}
               onLeaveFeedback={this.onLeaveFeedback} />
           </Section>
           {!total ? (<Notification message={"There is no feedback :("} />) : (
